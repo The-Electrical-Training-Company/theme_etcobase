@@ -1,0 +1,573 @@
+@font-face {
+	font-family: 'Univers';
+	src: url([[font:theme|UniversRegular.woff]]);
+	src: url([[font:theme|UniversBold.woff]]);
+	src: url([[font:theme|UniversLight.woff]]);
+}
+
+@font-face {
+	font-family: 'Kabel';
+	src: url([[font:theme|ITCKabelStd-Demi.woff]]);
+}
+* {
+	font-family: Univers, Arial, Helvetica, sans-serif;
+}
+body {
+	height: calc(100%-50px);
+	font-family: Univers, Arial, Helvetica, sans-serif !important;
+}
+
+h1 {
+	font-family: 'Kabel', sans-serif;
+}
+#page-login-index #page {
+	background-image: url([[pix:theme|cultural-bkg]]);
+	background-size: cover;
+}
+
+#page-login-index {
+	background-size: cover;
+	background-color:$green;
+	background-position: center;
+	height: 100%;
+
+	#region-main{
+		overflow: inherit;
+	}
+
+	#region-main > div > .row {
+		position: absolute;
+		top: 0;
+		left: 0;
+		> div {
+			width: 100vw;
+			height: 100vh;
+		}
+	}
+	#page {
+		margin-top: 0px;
+	}
+	.card {
+		background-color: rgba(255, 255, 255, 1);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 20px;
+	}
+	.card-header{
+		background-color: #fff;
+	}
+	#username {
+		margin-bottom: 7px;
+	}
+
+	#page-footer {
+		display: none;
+	}
+	.col-md-4 .push-md-1 {
+		left: 8.33333%;
+	}
+
+	.push-md-3 {
+		left: 8.33333%;
+	}
+
+	.col-md-4 {
+		width: 41.66667%;
+	}
+}
+
+.login {
+	color: black;
+	a {
+		color: $blue !important;
+	}
+}
+
+#page-wrapper {
+	margin-bottom: 0;
+	&:after {
+		min-height: 0px;
+		padding-bottom: 0px;
+	}
+}
+
+#page-header {
+	.btn {
+		background-color: $blue;
+		color: #fff;
+		i {
+			color: #fff;
+		}
+	}
+	.btn:hover {
+		background-color:$green;
+		border-color:$blue;
+	}
+}
+.nav .action-menu .dropdown-toggle{
+	color:#fff;
+}
+#page-header .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    color: #fff!important;
+}
+
+#page-navbar {
+	.breadcrumb {
+		padding: 3px 10px;
+	}
+}
+
+#region-main-settings-menu > div {
+    margin: 2rem;
+}
+
+.sectionname {
+	a {
+		color: #000;
+		font-family: 'Kabel', sans-serif;
+	}
+}
+.course-content ul.collapsibletopics li.section .sectionname {
+	color: #000;
+		font-family: 'Kabel', sans-serif;
+}
+
+
+.path-course-view .completionprogress {
+	display: none;
+}
+
+#page-course-view-topics {
+	.section {
+		.summary {
+			font-size: .9375rem;
+		}
+	}
+}
+
+//Not working?
+.page-course-view-topics #menubar #dropdown-toggle {
+	color: #fff;
+}
+
+#myoverview_courses_view {
+	.btn-default {
+		background-color: $darkGrey;
+		color: #fff;
+		border-left: solid 1px $darkGrey;
+		border-right: solid 1px $darkGrey;
+		border-top: solid 1px $darkGrey;
+		border-bottom: solid 1px $darkGrey;
+	}
+	.btn-default.active {
+		background-color: $green !important;
+	}
+}
+
+#page-course-view-topics {
+	.pull-xs-left {
+		width: 90%;
+		.page-context-header {
+			background-color: $darkGrey;
+		}
+	}
+}
+
+.navbar-light {
+	background-color: $green !important;
+}
+
+
+nav.navbar .logo img {
+    max-height: 25px;
+}
+header.navbar {
+	margin-left: 0;
+	-webkit-transition: margin-left 0.5s ease, margin-right 0.5s ease;
+	-moz-transition: margin-left 0.5s ease, margin-right 0.5s ease;
+	-o-transition: margin-left 0.5s ease, margin-right 0.5s ease;
+	transition: margin-left 0.5s ease, margin-right 0.5s ease;
+
+	.logo,
+	.site-name {
+		display: none;
+	}
+	.logo img {
+		max-height: 25px!important;
+		}
+	.search-input-form .expanded {
+		margin-top: 5px;
+	}
+	.usertext {
+		color: #fff;
+	}
+	.form-control {
+		margin-top: 5px;
+	}
+	i.fa {
+		color: white;
+	}
+	button[data-action='toggle-drawer'] {
+		border-color: transparent;
+		color: #fff;
+		margin-top: 0;
+		i.fa {
+			font-size: 1.25rem;
+		}
+		&:active {
+			color: #fff;
+			background-color: $blue;
+		}
+		a {
+			color: white;
+			border-color: transparent;
+			border: none;
+			&:hover {
+				background-color: $blue;
+			}
+		}
+	}
+	.dropdown-toggle {
+		color: white;
+	}
+	.dropdown-menu {
+		background-color: rgba($darkGrey, 0.9);
+		border-color: transparent;
+		.dropdown-item {
+			i {
+				color: white !important;
+			}
+		}
+		a {
+			color: white;
+			border-color: transparent;
+			&:hover {
+				background-color: $blue;
+			}
+		}
+	}
+}
+
+.btn-primary {
+	border-radius: 0.25rem;
+	text-decoration: none;
+	&:hover {
+		background-color: $blue;
+		border-radius: 0.25rem;
+		transition: all 0.2s ease;
+		border-color: $blue;
+	}
+}
+
+.btn-secondary {
+	background-color: $green;
+	color:#fff;
+	border-radius: 0.25rem;
+	text-decoration: none;
+	border-color:$green;
+	margin-left: 5px;
+	&:hover {
+		color:#fff;
+		background-color: $blue;
+		border-radius: 0.25rem;
+		transition: all 0.2s ease;
+		border-color: $blue;
+	}
+}
+
+.frontpage-categories {
+	.category-item {
+		display: block;
+		padding: 1em;
+		color: #fff;
+		border-radius: 5px;
+
+		box-sizing: border-box;
+		margin: 1em 0;
+		text-align: left;
+		.category-icon {
+			float: left;
+			height: 60px;
+			margin-right: 1em;
+			display: none;
+		}
+		@media (min-width: 767px) {
+			text-align: right;
+
+			.category-icon {
+				display: inline-block;
+			}
+		}
+		@media (min-width: 1200px) {
+			min-height: 115px;
+			float: left;
+			width: 49%;
+			margin: 0.5%;
+		}
+		@media (min-width: 1200px) and (max-width: 1450px) {
+			min-height: 140px;
+		}
+	}
+	.red {
+		background-color: $darkGrey;
+	}
+	.orange {
+		background-color: $green;
+	}
+	.yellow {
+		background-color: $blue;
+	}
+	.title {
+		color: #fff;
+		margin: 0.5em 0;
+		font-size: 1.5em;
+		line-height: 1em;
+		border: none;
+		padding: 0;
+	}
+	.subtitle {
+		color: #fff;
+		margin: 0 0 10px;
+	}
+	a {
+		color: #fff;
+	}
+	p {
+		color: #fff;
+		font-size: 13px;
+	}
+
+	img {
+		vertical-align: middle;
+		border: 0;
+	}
+}
+
+#maincontainer {
+	.yui3-tabview-list {
+		border-bottom-color: $darkGrey !important;
+	}
+}
+
+#dropdown-1 {
+	color: $blue !important;
+}
+#dropdown-2 {
+	color: $darkGrey !important;
+}
+
+body.inteldev-elearning-org-nz .website_type:before {
+	content: 'DEV SITE ONLY';
+	font-size: 30px;
+	font-weight: 800;
+	color: red;
+	display: inline-block;
+	background: rgba(255, 255, 255, 0.5);
+	width: 100%;
+	text-align: center;
+}
+
+body.intelstaging-elearning-org-nz .website_type:before {
+	content: 'STAGING SITE ONLY';
+	font-size: 30px;
+	font-weight: 800;
+	color: red;
+	display: inline-block;
+	background: rgba(255, 255, 255, 0.5);
+	width: 100%;
+	text-align: center;
+}
+
+body#page-login-index.ie,
+body#page-login-index.safari {
+	overflow: hidden;
+}
+body#page-login-index {
+	.card {
+		width: 100vw;
+		max-width: 500px;
+	}
+}
+.pagelayout-login .card-title h2 img {
+	padding: 0.75rem;
+}
+
+#page-header .card {
+	background-image: url([[pix:theme|cultural-bkg]]);
+	background-color: #0d7f8f;
+	background-size: cover;
+	background-position: center;
+
+}
+
+.page-header-headings h1 {
+	color: #fff;
+}
+
+#page-navbar nav {
+	background-color: $white;
+}
+
+body#page-mod-quiz-review {
+    a#showbutton {
+        background: inherit;
+        border: none;
+    }
+}
+
+// Added from Raw SCSS or Additional HTML
+
+/* Remove site name text */
+.site-name {display:none!important;}
+
+/* Change quiz background from blue to grey and text colour to black */
+.que .formulation {background: #f5f5f5; color: #000000;}
+
+/* Fix for Matrix Questions background-color */
+.que.matrix .question_text  {background-color: #f5f5f5!important; color: #000000;}
+
+/*Move quiz navigation block underneath question are to allow for larger quiz area*/
+body#page-mod-quiz-attempt {section {width:100%!important;}}
+
+/*Margins for two buttons next to each other (quizzes reports etc) */
+.btn-group > .btn:not(:first-child), .btn-group > .btn-group:not(:first-child){
+	margin-left:5px;
+}
+
+
+/* Change nav drawer toggle colour to be consistent with navbar */ 
+.navbar .btn {background-color: #0d7f8f!important; border-color: #0d7f8f!important;}
+.navbar .btn:hover {background-color: #008c9a!important; border-color: #008c9a!important;}
+.navbar .btn:active {background-color: #008c9a!important; border-color: #008c9a!important;}
+.navbar .btn:focus {background-color: #008c9a!important; border-color: #008c9a!important;}
+
+/* Navbar background color */
+.navbar{background-color:#0d7f8f!important;}
+
+
+
+/* navbar icons */
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+	color:#fff;
+}
+.navbar-light .navbar-nav .nav-link:hover,  .navbar-light .navbar-nav .nav-link:focus {
+    color: #f5f5f5;
+}
+.popover-region i.icon.fa.fa-fw:hover, .popover-region i.icon.fa.fa-fw:focus {
+    color:$blue;
+}
+
+.userbutton .dropdown-toggle::after {
+    color:$blue;
+}
+#page-header .fa-navicon:before, .fa-reorder:before, .fa-bars:before{
+    color:$blue;
+}
+
+
+/*Makes text un-selectable*/
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+.down:hover {
+  transition: transform .2s;
+  transform: scale(1.5) translateY(50px);
+}
+
+.up:hover {
+  transition: transform .2s;
+  transform: scale(1.5) translateY(-50px);
+}
+
+.down_right:hover {
+ transition: transform .2s;
+ transform: scale(1.5) translate(50px, 50px);
+}
+
+.up_right:hover {
+ transition: transform .2s;
+ transform: scale(1.5) translate(50px, -50px);
+}
+
+
+
+/* Hide cohort selector in enrolment form [SIT-9331] */
+body.path-user.modal-open div.modal-dialog form #fitem_id_cohortlist {
+    display: none;
+}
+
+/*Remove logged in user from footer */
+.logininfo {
+    display: none;
+}
+
+/* Footer background image */
+footer#page-footer {
+background-image: url([[pix:theme|cultural-design]]);
+background-size: cover;
+}
+
+
+.col-md-9 {
+max-width: 100%;
+}
+
+.aalink.focus, #page-footer a:not([class]).focus, .arrow_link.focus, a:not([class]).focus, .activityinstance > a.focus, .aalink:focus, #page-footer a:not([class]):focus, .arrow_link:focus, a:not([class]):focus, .activityinstance > a:focus {
+	background-color:transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#page-footer a:focus .icon {
+    color: #fff;
+}
+
+/* Profile page */
+.btn-group.header-button-group {
+    margin-left: 10px;
+
+}
+ #page-header .btn {
+	border-radius: 0.25rem;
+}
+
+/* Context header menu */
+.nav-item .dropdown-toggle::after {
+    color: #fff;
+}
+#action-menu-toggle-2 .menubar .dropdown-toggle::after{
+	
+	color:#fff;
+}
+.dropdown-toggle > .icon, #region-main-settings-menu .dropdown-toggle > .icon {
+	color:$blue;
+}
+
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle, .btn-outline-secondary:hover {
+	background-color:$green;
+}
+
+.section .activity a.stealth, .section .activity a.stealth:hover{
+	color:#0a7f8f !important;
+	font-style: italic;
+}
+
+.popover-region-toggle::after {
+	bottom:1px;
+}
+
+.form-control:focus{
+	border-color:$blue;
+}

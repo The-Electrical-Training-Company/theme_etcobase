@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'Univers';
+	src: url([[font:theme|UniversRegular.woff]]);
+	src: url([[font:theme|UniversBold.woff]]);
+	src: url([[font:theme|UniversLight.woff]]);
+}
+
+@font-face {
+	font-family: 'Kabel';
+	src: url([[font:theme|ITCKabelStd-Demi.woff]]);
+}
+
+*/
+:root {
+    --font-family-sans-serif: Univers, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; 
+}
+
+body {
+font-family: Univers, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+.popover {
+    font-family: Univers, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.tooltip {
+    font-family:Univers, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
